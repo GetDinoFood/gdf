@@ -1,0 +1,131 @@
+@font-face {
+  font-family: Nico;
+  src: url(https://cdn.glitch.global/178ab460-0ad9-44d2-8923-4839b7472430/NicoClean-Regular.otf);
+}
+@font-face {
+  font-family: NicoPaint;
+  src: url(https://cdn.glitch.global/178ab460-0ad9-44d2-8923-4839b7472430/NicoPaint-Regular.otf);
+}
+@font-face {
+  font-family: NicoBold;
+  src: url(https://cdn.glitch.global/178ab460-0ad9-44d2-8923-4839b7472430/NicoBold-Regular.otf);
+}
+
+:root {
+  --font: Nico;
+  --fontTitles: NicoPaint;
+  --fontBold: NicoBold;
+  --colorFont: white;
+  --colorLinks: #ffdead;
+  --colorTitles: #ffdead;
+  --buttonFontSize: 25px;
+}
+html {
+  cursor: url(https://cdn.glitch.global/178ab460-0ad9-44d2-8923-4839b7472430/pointer.png), pointer;
+  cursor: url(https://cdn.glitch.global/178ab460-0ad9-44d2-8923-4839b7472430/default.png), default;
+}
+body {
+  background-color: #291d2b;
+  font-family: var(--font);
+  color: var(--colorFont);
+  
+}
+
+.box {
+  margin: 10px 10px 10px 10px;
+  border-width: 36px;
+  border-style: solid;
+  border-image: url(https://cdn.glitch.global/178ab460-0ad9-44d2-8923-4839b7472430/Finished_BOX.svg?v=1716063541091);
+  border-image-slice: 36 fill;
+  border-image-repeat: round;
+}
+button {
+  background: rgba(0,0,0,0);
+  font-family: var(--font);
+  color: var(--colorFont);
+  border-width: 26px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0);
+   border-image-slice: 23 19 23 19 fill; 
+  border-image-width: 20px 20px 20px 20px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  border-image-source: url("https://cdn.glitch.global/178ab460-0ad9-44d2-8923-4839b7472430/button.svg");
+  border-style: solid;
+  white-space: nowrap
+}
+button:hover {
+  cursor: url(https://cdn.glitch.global/178ab460-0ad9-44d2-8923-4839b7472430/pointer.png), pointer;
+  border-image-source: url("https://cdn.glitch.global/178ab460-0ad9-44d2-8923-4839b7472430/ButtonHover.svg");
+}
+button:disabled {
+  cursor: not-allowed;
+  border-image-source: url("https://cdn.glitch.global/178ab460-0ad9-44d2-8923-4839b7472430/button-inactive.svg");
+}
+.LinkButton {
+  background: rgba(0,0,0,0);
+  font-family: var(--font);
+  color: var(--colorFont);
+  border-width: 26px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0);
+   border-image-slice: 23 19 23 19 fill; 
+  border-image-width: 20px 20px 20px 20px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  border-image-source: url("https://cdn.glitch.global/178ab460-0ad9-44d2-8923-4839b7472430/button.svg");
+  border-style: solid;
+  text-decoration: none;
+  white-space: nowrap
+}
+.LinkButton:hover {
+  cursor: url(https://cdn.glitch.global/178ab460-0ad9-44d2-8923-4839b7472430/pointer.png), pointer;
+  border-image-source: url("https://cdn.glitch.global/178ab460-0ad9-44d2-8923-4839b7472430/ButtonHover.svg");
+  background: rgba(0,0,0,0);
+}
+a {
+  color: var(--colorLinks);
+  text-decoration: underline 3px var(--colorLinks);
+  margin: 2px;
+  padding: 2px;
+  transition: 0.2s;
+}
+a:hover {
+  cursor: url(https://cdn.glitch.global/178ab460-0ad9-44d2-8923-4839b7472430/pointer.png), pointer;
+  color: var(--colorFont);
+  background-color: var(--colorLinks);
+  transition: 0.2s;
+  
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(--colorTitles);
+  font-family: var(--fontTitles)
+}
+h1, h3, h5 {
+  text-align: center;
+}
+navbar {
+  display: flex;
+  height: 55px;
+  width: 100%;
+}
+navbar > .LinkButton {
+  width: 25%;
+  text-align: center;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 35px;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+}
